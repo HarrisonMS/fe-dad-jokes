@@ -24,7 +24,7 @@ function App() {
       <Route path='/register' component={Register} />
        </div>
       <Link to='/jokes'>Jokes</Link>
-      <PrivateRoute path='/jokes' component={JokesList} />
+      <Route path='/jokes' component={JokesList} />
      
       {/* <Home  exact pathto='/'component={Home}/>
       <div className='links'>
