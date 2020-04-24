@@ -21,12 +21,12 @@ const Register = () => {
   }
   const handleSubmit = event => {
     event.preventDefault();
-    const endpoint = 'https://dadjokess.herokuapp.com/api/auth/login';
+    const endpoint = 'https://dadjokess.herokuapp.com/api/auth/register';
 
   axios
     .post(endpoint, creds)
     .then(response => {
-      console.log('res in login post',response)
+      console.log('res in register post',response)
       const token = (response.data.token);
       console.log('token stringified',token)
       localStorage.setItem('token', token);
