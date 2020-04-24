@@ -33,7 +33,7 @@ const Register = () => {
       history.push('/jokes');
       console.log('history',history)
     })
-    .catch(error => console.log('can not seem to login buddy', error));
+    .catch(error => console.log('can not seem to register buddy', error));
       setCreds({
         username: '',
         password: ''

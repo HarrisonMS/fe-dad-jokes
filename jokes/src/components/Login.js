@@ -24,7 +24,7 @@ const Login = () => {
     const endpoint = 'https://dadjokess.herokuapp.com/api/auth/login';
 
   axios
-    .post(endpoint)
+    .post(endpoint, creds)
     .then(response => {
       console.log('res in login post',response)
       const token = (response.data.token);
