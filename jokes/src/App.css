@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,28 +12,133 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
+} */
+/* 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
+  border-right: 2px solid white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(14px + 10vmin);
   color: white;
+  width: 50%;
+} */
+
+.headerContainer {
+	border-radius: 10px;
+	height: 10vh;
+	font-family: 'Comfortaa', cursive;
+	color: #ffff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-decoration: none;
+	flex-wrap: wrap;
+}
+@media only screen and (max-width: 915px) {
+	.header-container {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		height: 60%;
+		font-size: .6rem;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.headerTitle {
+  
+  font-size: 2.5em;
+  font-family: 'Herr Von Muellerhoff', cursive;
+	color: #fff;
+	text-decoration: none;
+}
+/* .headerTitle:hover {
+	font-size: 3.0rem;
+} */
+
+/*.nav-link-cont{
+	display: flex;
+	color: white;
+	color: #ffff;
+
+}
+*/
+.nav-link {
+  font-family: 'Comfortaa', cursive;
+	font-size: 1.2rem;
+	color: #ffff;
+	text-decoration: none;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.nav-link:hover {
+	font-size: 1.3rem;
+	background-color: white;
+	color: black;
+
+	border-radius: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-container {
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 90vh;
+}
+.home-left-cont {
+  width: 50%;
+  border-right: 2px solid white;
+
+}
+.home-right-cont {
+  width: 50%;
+}
+.home-h4 {
+  font-size: calc(14px + 4vmin);
+}
+.home-h1 {
+  font-size: calc(14px + 10vmin);
+}
+@media only screen and (max-width: 900px) {
+  .home-container {
+   display: flex;
+   flex-flow: column nowrap;
+   margin-top: 20%;
   }
-  to {
-    transform: rotate(360deg);
+  .home-left-cont {
+    height: 50%;
+    border-right: none;
+    border-bottom: 2px solid white;
+    width: 90%
   }
+  .home-right-cont {
+    height: 50%;
+  }
+}
+.jokes-list {
+  display: flex;
+ flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.joke-card {
+  color: purple;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(9, 101, 143);
+  color: rgb(10, 0, 0);
+  font-weight: 900;
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+
 }
